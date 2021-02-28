@@ -1,8 +1,8 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect } from 'react'
 import { getPoke } from '../Services/Pokeapi'
 
 const PokeContainer = () => {
-    const { data, setData } = useState([])
+
 
     const getData = () => {
         getPoke().then((response) => {
